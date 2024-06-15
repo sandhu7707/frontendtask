@@ -6,9 +6,9 @@
 - npm run build
 - npm run start
 
-### 
+### Publcly deployed at https://wasserstoff-frontendtask-six.vercel.app/
 
-### 
+### Video Submission at https://youtu.be/mAUAPfJnYQA
 
 This repo contains Frontend Task for Round 1 for the role of Software Engineer at Wasserstoff.
 
