@@ -10,7 +10,6 @@ export default function Dashboard(){
     const cards = new Array(5).fill(0).map((v,i) => (
         <>
             <div className="text-3xl h-28 pt-4">{view==="collections" && <><h1 className="font-medium">Lunar Palace: </h1><h1>(ft. Kanye West)</h1></>}</div>
-            {/* <Image width='400' height='600' src={`https://picsum.photos/seed/${Math.ceil(Math.random()*1000)}/400/600?blur=2`} alt=""></Image> */}
             
             <div className="relative">
                 <Image width='400' height='600' src={`https://picsum.photos/400/600?blur=2`} alt=""></Image>
@@ -21,7 +20,7 @@ export default function Dashboard(){
     
     console.log(cards)
     return(
-        <div className="grid md:grid-cols-[minmax(500px,10fr)_80px_minmax(600px,6fr)] lg:grid-cols-[minmax(500px,10fr)_120px_minmax(600px,6fr)] md:h-full">
+        <div className="grid md:grid-cols-[minmax(500px,10fr)_120px_minmax(600px,6fr)] md:h-full">
             <div className="relative bg-[#15181B] max-w-[100vw]">
                 <div className="relative z-10 pointer-events-none">
                     <Cards 
@@ -55,7 +54,7 @@ export default function Dashboard(){
                     </div>    
                 </div>
             </div>
-            <div className="bg-[#B9A0FF] max-w-[100vw]">
+            <div className="bg-[#B9A0FF] max-w-[100vw] flex">
                 <Banner/>
             </div>
             <div className="bg-[#15181B] max-w-[100vw]">

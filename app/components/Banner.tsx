@@ -1,4 +1,4 @@
-import { useCallback, useEffect } from "react"
+import {useEffect } from "react"
 
 export default function Banner () {
     
@@ -10,14 +10,14 @@ export default function Banner () {
             if(Math.abs(bannerContainer.scrollLeft - scrollableWidth) < 5)
                 bannerContainer.scrollTo(0,0)
             else
-                bannerContainer?.scrollTo(0, (bannerContainer.scrollLeft + scrollableWidth*(30)/10000))
+                bannerContainer?.scrollTo((bannerContainer.scrollLeft + scrollableWidth*(50)/20000), 0)
         }
         else if(bannerContainer && bannerContainerBoundingRect){
             const scrollableHeight = bannerContainer.scrollHeight - bannerContainerBoundingRect?.height;
             if(Math.abs(bannerContainer.scrollTop - scrollableHeight) < 5)
                 bannerContainer.scrollTo(0,0)
             else
-                bannerContainer?.scrollTo(0, (bannerContainer.scrollTop + scrollableHeight*(50)/10000))
+                bannerContainer?.scrollTo(0, (bannerContainer.scrollTop + scrollableHeight*(50)/20000))
         }
     }
 
@@ -27,8 +27,8 @@ export default function Banner () {
     })
 
     return (
-        <div id="banner-container" className="h-14 md:h-full overflow-x-scroll md:overflow-y-scroll text-nowrap md:vertical-rl scrollbar-width-none">
-            <div id="banner" className="text-4xl md:leading-[120px] leading-14 text-[#000000] font-bold">
+        <div id="banner-container" className="h-14 md:h-full flex-grow overflow-x-scroll md:overflow-y-scroll text-nowrap md:vertical-rl scrollbar-width-none">
+            <div id="banner" className="text-3xl md:text-5xl md:leading-[120px] leading-14 text-[#000000] font-bold">
                 Event: Bus tour, JLM Stadium, Delhi * Collection Live: Meta Lives, Live in Astrix Lorem
             </div>
         </div>
