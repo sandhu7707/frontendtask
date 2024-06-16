@@ -6,7 +6,7 @@
 - npm run build
 - npm run start
 
-### Publcly deployed at https://wasserstoff-frontendtask-six.vercel.app/
+### Publcly deployed at https://frontendtask-mu-eight.vercel.app/
 
 ### Video Submission at https://youtu.be/mAUAPfJnYQA
 
