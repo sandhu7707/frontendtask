@@ -6,9 +6,9 @@ import CollectionDetails from "../side-detail/CollectionDetails"
 import MainView from "../main-view/MainView"
 
 export default function Dashboard(){
-    type events = "events"
-    type collections = "collections"
-    const [view, setView]: [view: collections|events, any] = useState('events')
+    // type events = "events"
+    // type collections = "collections"
+    const [view, setView]: [view: string, any] = useState('events')
 
     const data = {
         'collections': new Array(5).fill(0).map((v,i) => ({
