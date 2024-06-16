@@ -27,8 +27,8 @@ export default function Banner () {
     })
 
     return (
-        <div id="banner-container" className="h-14 md:h-full flex-grow overflow-x-scroll md:overflow-y-scroll text-nowrap md:vertical-rl scrollbar-width-none">
-            <div id="banner" className="text-3xl md:text-5xl md:leading-[120px] leading-14 text-[#000000] font-bold">
+        <div id="banner-container" className="h-14 md:h-full flex-grow overflow-x-scroll md:overflow-y-scroll text-nowrap md:vertical-rl scrollbar-width-none pointer-events-none">
+            <div id="banner" className="text-3xl md:text-5xl md:leading-[100px] leading-14 text-[#000000] font-medium">
                 Event: Bus tour, JLM Stadium, Delhi * Collection Live: Meta Lives, Live in Astrix Lorem
             </div>
         </div>
