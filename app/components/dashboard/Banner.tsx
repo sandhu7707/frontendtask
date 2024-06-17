@@ -17,7 +17,7 @@ export default function Banner () {
             if(Math.abs(bannerContainer.scrollTop - scrollableHeight) < 5)
                 bannerContainer.scrollTo(0,0)
             else
-                bannerContainer?.scrollTo(0, (bannerContainer.scrollTop + scrollableHeight*(50)/20000))
+                bannerContainer?.scrollTo(0, (bannerContainer.scrollTop + scrollableHeight*(50)/10000))
         }
     }
 

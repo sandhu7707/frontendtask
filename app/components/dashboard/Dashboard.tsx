@@ -11,16 +11,17 @@ export default function Dashboard(){
     const [view, setView]: [view: string, any] = useState('events')
 
     const data = {
-        'collections': new Array(5).fill(0).map((v,i) => ({
-                    name: 'Lunar Palace',
-                    owner: 'ft. Kanye West',
+        'collections': {
+            name: 'Lunar Palace',
+            owner: 'ft. Kanye West',
+            cards: new Array(5).fill(0).map((v,i) => ({
                     imageSrc: 'https://picsum.photos/400/600?blur=2'
-        })),
-        'events': new Array(5).fill(0).map((v,i) => ({
+        }))},
+        'events': {cards: new Array(5).fill(0).map((v,i) => ({
                     name: 'Event Name',
                     imageSrc: 'https://picsum.photos/450/700?blur=2',
                     location: 'Location'
-        })),
+        }))},
         'eventData': {
             name: 'Event Name',
             location: 'Venue',
@@ -68,10 +69,10 @@ export default function Dashboard(){
                     data={data}
                 />
             </div>
-            <div className="bg-[#B9A0FF] max-w-[100vw] flex">
+            <div className="bg-[#B9A0FF] max-w-[100vw] flex z-10">
                 <Banner/>
             </div>
-            <div className="bg-[#15181B] max-w-[100vw]">
+            <div className="bg-[#15181B] max-w-[100vw] z-10">
                 <div>
                     <div className="h-full flex flex-col justify-between">
                         <section className="mx-[10%]">

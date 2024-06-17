@@ -11,7 +11,7 @@ export default function MainView ({view, setView, data}: {view: string, setView:
         <>
             <div className="relative z-10 pointer-events-none">
                 <Cards 
-                    cards={data[view]}
+                    data={data[view]}
                     view={view}
                 />
             </div>

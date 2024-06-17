@@ -25,8 +25,8 @@ export default function Cover () {
     }
 
     return (
-        <div className="flex flex-col h-full w-full bg-[#FFF4DF] justify-center">
-            <div><Image className="h-[50px] w-[100px] lg:h-[100px] lg:w-[200px] ml-8 mb-8" height='100' width='200' alt="ALTRIX" src="/generic_logo.png"></Image></div>
+        <div className="flex flex-col h-full w-full bg-[#FFF4DF]">
+            <div><Image className="h-[50px] w-[100px] lg:h-[100px] lg:w-[200px] ml-8 my-16" height='100' width='200' alt="ALTRIX" src="/generic_logo.png"></Image></div>
             <div className="flex bg-[#FFF4DF]">
                 <div className="vertical-text md:horizontal-tb text-black m-auto md:w-4/5 text-3xl lg:text-6xl font-medium text-nowrap">
                     {headingContainer(<>WE {imageContainer(<Image className=" object-cover object-left h-full" width="1000" height='60' alt="ALTRIX" src="https://picsum.photos/seed/lkgfd/1000/60"></Image>, "flexitem")} ORGANIZE THE</>, "growshrink")}
