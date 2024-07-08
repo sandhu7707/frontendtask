@@ -8,8 +8,6 @@
 
 ### Publcly deployed at https://frontendtask-mu-eight.vercel.app/
 
-### Video Submission at https://youtu.be/mAUAPfJnYQA
-
 This repo contains Frontend Task for Round 1 for the role of Software Engineer at Wasserstoff.
 
 Approaching from the general flow noticeable from first glance, I started by creating a Cards and a Dashbard component. Designing the the cover swipe on click and the cover contents. 
